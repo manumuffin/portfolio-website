@@ -1,3 +1,45 @@
+body {
+    background: linear-gradient(#F8F7FF, #FFEEDD);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        background-image: url("/images/smallMobileBackground.svg");
+    }
+
+    .intro-portrait {
+        background-image: url("/images/smallPortraitBackground.svg");
+    }
+
+    .intro-portrait img {
+        
+        width: 6.875em;
+        height: 6.875em;
+        object-fit: cover;
+        object-position: 0% 0%;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (max-width: 800px) {
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+
+
+
+
 /* Modal/ Pop Up */
 .bg-modal {
     width: 100%;
