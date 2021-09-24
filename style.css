@@ -221,11 +221,7 @@ ul a:hover {
 
     
 
-    .project img {
-        max-width: 30%;
-        height: fit-content;
-        min-width: 265px;
-    }
+    
 
     
 }
@@ -297,6 +293,7 @@ ul a:hover {
         max-width: 30%;
         height: fit-content;
         min-width: 265px;
+        border-radius: 15px;
     }
 
 
