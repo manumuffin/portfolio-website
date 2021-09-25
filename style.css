@@ -108,6 +108,7 @@ main {
 
 
 .project {
+    background-color: #F8F7FF;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -120,15 +121,19 @@ main {
     max-width: 75%;
 }
 
+.project:hover {
+    box-shadow: 0 16px 24px 0 rgba(184, 184, 255, 80);
+}
+
+
 
 .project img {
     padding: 2em 0;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    max-width: 30%;
+    width: 15rem;
     height: fit-content;
     min-width: 265px;
+    border-radius: 15px;
+    background-color: #F8F7FF;
 }
 
 .project-description {
