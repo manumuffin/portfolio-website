@@ -38,8 +38,11 @@ main {
     height: 100vh;
 }
 
-.navbar:hover {
-    width: 16rem;
+
+@media all and (min-width: 701px) {
+    .navbar:hover {
+        width: 16rem;
+    }
 }
 
 .navbar-nav {
@@ -93,10 +96,9 @@ main {
 .intro-portrait {
     width: 80%;
     height: 10rem;
-    border-radius: 15px;
-    padding: 0.5em 1em;
+    border-radius: 50%;
+    margin: 0.5em 1em;
     object-fit: cover;
-    object-position: 50% -10%;
 }
 
 .nav-item.intro-description {
@@ -113,7 +115,7 @@ main {
     flex-direction: row;
     align-items: center;
     padding: 2rem 4rem;
-    color: #9381FF;
+    color: #5e50b5;
     box-shadow: 0 8px 16px 0 rgba(184, 184, 255, 100);
     transition: 0.3s;
     border-radius: 15px;
@@ -125,15 +127,12 @@ main {
     box-shadow: 0 16px 24px 0 rgba(184, 184, 255, 80);
 }
 
-
-
 .project img {
-    padding: 2em 0;
+    padding: 0;
     width: 15rem;
-    height: fit-content;
     min-width: 265px;
     border-radius: 15px;
-    background-color: #F8F7FF;
+    background-color: #9381FF;
 }
 
 .project-description {
@@ -219,37 +218,30 @@ ul a:hover {
 }
 
 
-@media only screen and (max-width: 650px) { /*tablet*/
-
-
-    
-
-    
-
-    
-
-    
-}
-
-@media only screen and (max-width: 650px) { /*mobile*/
+@media only screen and (max-width: 700px) { /*mobile*/
 
     .navbar {
-        bottom: 0;
         width: 100vw;
-        height: 10rem; 
+        height: 10rem;
+        transition: 0.3s;
     }
 
     .navbar-nav {
         display: flex;
         flex-direction: row;
+        padding: 0 1em 0 1em;
     }
     
     .navbar-nav:first-child {
         padding-left: 0.5em;
     }
 
+    .navbar:hover {
+        box-shadow: 0 8px 16px 0 rgba(184, 184, 255, 100);
+    }
+
     .nav-link {
-        margin: 0;
+       margin: 0;
        padding: 1em;
        height: 1em;
        width: 1em;
@@ -265,12 +257,12 @@ ul a:hover {
     }
 
     .nav-item.intro h1 {
-        padding: 0.3em;
-        font-size: 1.5em;
+        padding: 0.5em;
+        font-size: 1.35em;
     }
 
     .nav-item.intro-description {
-        padding: 0.7em 0.3em 0.3em 0.3em;
+        display: none;
     }
 
     .nav-item.intro img {
@@ -290,16 +282,38 @@ ul a:hover {
         padding: 5%;
     }
 
-    .project:last-child {
-        padding: 2rem 4rem 12rem 4rem;
+    .project {
+        padding: 2rem 2rem;
+    }
+
+    .project:first-child {
+        padding: 10rem 2rem 2rem 2rem;
     }
 
     .project img {
         max-width: 30%;
         height: fit-content;
-        min-width: 265px;
         border-radius: 15px;
     }
 
 
+}
+
+@media only screen and (max-width: 500px) {
+
+    .nav-item.intro h1 {
+        display: none;
+    }
+
+    .navbar-nav {
+        padding: 3em 0 2em 0;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .project-description p{
+        padding: 0;
+    }
 }
