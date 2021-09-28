@@ -147,7 +147,7 @@ main {
 
 .nav-item.intro-description {
     padding: 0.5em 1em;
-    max-width: fit-content;
+    max-width: 10em;
 }
 
 /* Projects */
