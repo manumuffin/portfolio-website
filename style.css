@@ -361,3 +361,23 @@ ul a:hover {
         padding: 0;
     }
 }
+
+@media only screen and (max-width: 300px) {
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-nav:first-child {
+        padding-left: 0;
+    }
+
+    .navbar-nav:last-child {
+        flex-basis: 100%;
+    }
+
+    .nav-item {
+        width: auto;
+    }
+}
