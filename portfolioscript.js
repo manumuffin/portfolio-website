@@ -26,4 +26,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
             intro.style.left = '-100vw';
         }, 2300)
     })
-})
+});
+
+function pasteEmail() {
+    navigator.clipboard.writeText("manuelagreimel@yahoo.de");
+    console.log("copied!");
+}
